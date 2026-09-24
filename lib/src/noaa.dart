@@ -21,9 +21,11 @@ double deg(double radians) => radians / _deg;
 double julianDay(DateTime instant) =>
     instant.toUtc().microsecondsSinceEpoch / 8.64e10 + 2440587.5;
 
-/// UTC DateTime of a Julian Day, rounded to the millisecond.
+/// UTC DateTime of a Julian Day, rounded to the whole second (the method is
+/// not accurate to better than a few seconds, so finer digits are noise).
 DateTime dateTimeFromJulianDay(double jd) =>
-    DateTime.fromMillisecondsSinceEpoch(((jd - 2440587.5) * 8.64e7).round(),
+    DateTime.fromMillisecondsSinceEpoch(
+        ((jd - 2440587.5) * 86400).round() * 1000,
         isUtc: true);
 
 /// Julian centuries since J2000.0.

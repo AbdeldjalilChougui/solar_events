@@ -106,6 +106,18 @@ void main() {
       }
     });
 
+    test('times are rounded to whole seconds', () {
+      for (final e in [
+        t.sunrise,
+        t.sunset,
+        t.civilDawn,
+        SunEvent.at(t.solarNoon)
+      ]) {
+        expect(e.time!.millisecond, 0);
+        expect(e.time!.microsecond, 0);
+      }
+    });
+
     test('only year, month and day of the date are used', () {
       final a = _algiers(DateTime(2026, 3, 20, 23, 59));
       final b = _algiers(DateTime.utc(2026, 3, 20));
