@@ -4,8 +4,8 @@ description: >-
   blue hour, custom sun-altitude times and sun position using NOAA equations.
 version: 0.1.0
 homepage: https://abdeldjalilchougui.biz/
-repository: https://github.com/AbeldjalilChougui/sun_times
-issue_tracker: https://github.com/AbeldjalilChougui/sun_times/issues
+repository: https://github.com/AbdeldjalilChougui/sun_times
+issue_tracker: https://github.com/AbdeldjalilChougui/sun_times/issues
 topics:
   - sun
   - sunrise
