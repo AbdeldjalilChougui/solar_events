@@ -1,11 +1,11 @@
-# sun_times
+# solar_events
 
 Dependency-free solar calculations for Dart: sunrise, sunset, solar noon, twilights,
 golden and blue hour, the time the Sun reaches any altitude, and the Sun's position.
 It is based on the NOAA solar calculator equations (after Meeus) and has explicit
 results for polar day and polar night.
 
-[![pub package](https://img.shields.io/pub/v/sun_times.svg)](https://pub.dev/packages/sun_times)
+[![pub package](https://img.shields.io/pub/v/solar_events.svg)](https://pub.dev/packages/solar_events)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Features
@@ -28,13 +28,13 @@ results for polar day and polar night.
 ## Install
 
 ```sh
-dart pub add sun_times
+dart pub add solar_events
 ```
 
 ## Usage
 
 ```dart
-import 'package:sun_times/sun_times.dart';
+import 'package:solar_events/solar_events.dart';
 
 void main() {
   const algiers = Duration(hours: 1); // UTC+01:00

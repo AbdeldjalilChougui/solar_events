@@ -1,4 +1,4 @@
-import 'package:sun_times/sun_times.dart';
+import 'package:solar_events/solar_events.dart';
 import 'package:test/test.dart';
 
 import 'reference_data.dart';

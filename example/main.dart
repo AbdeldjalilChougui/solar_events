@@ -1,4 +1,4 @@
-import 'package:sun_times/sun_times.dart';
+import 'package:solar_events/solar_events.dart';
 
 void main() {
   const algiers = Duration(hours: 1); // UTC+01:00, no daylight saving.

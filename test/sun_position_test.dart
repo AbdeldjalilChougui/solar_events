@@ -1,4 +1,4 @@
-import 'package:sun_times/sun_times.dart';
+import 'package:solar_events/solar_events.dart';
 import 'package:test/test.dart';
 
 /// Worked example shipped in NOAA's NOAA_Solar_Calculations_day.ods
